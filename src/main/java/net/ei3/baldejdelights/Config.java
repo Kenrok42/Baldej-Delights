@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package net.ei3.baldejdelights;
 
 import java.util.List;
 import java.util.Set;

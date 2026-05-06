@@ -1,0 +1,20 @@
+{
+
+  "item.baldejdelights.onion_frenzy": "Луковый угар",
+  "item.baldejdelights.apples_in_chicken_broth": "Яблоки в курином бульоне",
+  "item.baldejdelights.egg_barbecue": "Шашлык из куриного яйца",
+  "item.baldejdelights.bobs": "Бобс",
+  "item.baldejdelights.fried_nails": "Жареные гвозди",
+  "item.baldejdelights.overcooked_pancakes": "Пережареные сырники",
+
+  "item.baldejdelights.raw_pancakes": "Сырые сырники",
+
+  "effect.baldejdelights.disappointment": "Разочарование",
+
+  "advancements.baldejdelights.disappointment_advancement.title": "Разочарование",
+
+  "advancements.baldejdelights.disappointment_advancement.description": "Каждый блин комом",
+
+  "creativetab.baldejdelights.baldej_delights": "Балдёжные Наслаждения"
+
+}
