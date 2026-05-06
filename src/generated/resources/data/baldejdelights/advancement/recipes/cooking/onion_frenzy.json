@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_onion": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:onion"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "baldejdelights:cooking/onion_frenzy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_onion"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "baldejdelights:cooking/onion_frenzy"
+    ]
+  }
+}
