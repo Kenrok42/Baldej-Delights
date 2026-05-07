@@ -25,11 +25,13 @@ public class ModItems {
 
     public static final DeferredItem<Item> OVERCOOKED_PANCAKES = ITEMS.register("overcooked_pancakes", () -> new Item(new Item.Properties().food(ModFoodProperties.OVERCOOKED_PANCAKES)));
 
-    //Ingredients/blanks
+    public static final DeferredItem<Item> TOMATO_WITH_MALTESE_CROSS = ITEMS.register("tomato_with_maltese_cross", () -> new Item(new Item.Properties().food(ModFoodProperties.TOMATO_WITH_MALTESE_CROSS)));
 
     public static final DeferredItem<Item> RAW_PANCAKES = ITEMS.register("raw_pancakes", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SURSTROMING = ITEMS.register("surstroming", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SOUR_FISH = ITEMS.register("sour_fish", () ->  new Item(new Item.Properties().food(ModFoodProperties.SOUR_FISH)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

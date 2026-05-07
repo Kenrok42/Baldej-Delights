@@ -36,4 +36,14 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(ModEffects.DISAPPOINTMENT, 600, 0), 0.5f)
 
             .build();
+
+    public static final FoodProperties TOMATO_WITH_MALTESE_CROSS = new FoodProperties.Builder().nutrition(3).saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1200, 2), 1f)
+
+            .build();
+
+    public static final FoodProperties SOUR_FISH = new FoodProperties.Builder().nutrition(4).saturationModifier(0.7f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 100, 1), 0.5f)
+
+            .build();
 }

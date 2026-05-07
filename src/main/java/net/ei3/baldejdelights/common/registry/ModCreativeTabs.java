@@ -26,6 +26,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.OVERCOOKED_PANCAKES);
 
                         output.accept(ModItems.RAW_PANCAKES);
+                        output.accept(ModItems.TOMATO_WITH_MALTESE_CROSS);
                     }).build());
 
     public static void register(IEventBus eventBus) {
