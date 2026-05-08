@@ -19,4 +19,4 @@ memes and meme personas such as Azazin Kreet, Ruslan Gitelman and Vitya Mitya.
 
 
 ## Contributing
-You are free to use any textures or code from this repository
+You are free to use any texture or code from this repository
