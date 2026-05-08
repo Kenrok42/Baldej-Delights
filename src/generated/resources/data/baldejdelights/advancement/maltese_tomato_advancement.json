@@ -1,0 +1,34 @@
+{
+  "parent": "baldejdelights:disappointment_advancement",
+  "criteria": {
+    "pickup_tomato_with_maltese_cross": {
+      "conditions": {
+        "items": [
+          {
+            "items": "baldejdelights:tomato_with_maltese_cross"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.baldejdelights.maltese_tomato_advancement.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "baldejdelights:tomato_with_maltese_cross"
+    },
+    "title": {
+      "translate": "advancements.baldejdelights.maltese_tomato_advancement.title"
+    }
+  },
+  "requirements": [
+    [
+      "pickup_tomato_with_maltese_cross"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
