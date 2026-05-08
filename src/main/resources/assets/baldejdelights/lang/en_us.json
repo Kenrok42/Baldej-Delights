@@ -12,9 +12,13 @@
 
   "effect.baldejdelights.disappointment": "Disappointment",
 
-  "advancements.baldejdelights.disappointment_advancement.title": "Disappointment",
+  "effect.baldejdelights.tomato_blessing": "Tomato blessing",
 
+  "advancements.baldejdelights.disappointment_advancement.title": "Disappointment",
   "advancements.baldejdelights.disappointment_advancement.description": "Every try is bound to be a flop",
+
+  "advancements.baldejdelights.maltese_tomato_advancement.title": "Sunboy, the prophet",
+  "advancements.baldejdelights.maltese_tomato_advancement.description": "It ought to be preserved, but one must eat",
 
   "creativetab.baldejdelights.baldej_delights": "Baldej Delights"
 

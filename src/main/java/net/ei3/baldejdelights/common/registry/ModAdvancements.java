@@ -61,7 +61,36 @@ public class ModAdvancements extends AdvancementProvider {
 
             builder.requirements(AdvancementRequirements.allOf(List.of("pickup_overcooked_pancakes")));
 
-            builder.save(saver, ResourceLocation.fromNamespaceAndPath("baldejdelights", "disappointment_advancements"), existingFileHelper);
+            AdvancementHolder disappointmentHolder = builder.save(saver, ResourceLocation.fromNamespaceAndPath("baldejdelights", "disappointment_advancement"), existingFileHelper);
+
+            Advancement.Builder secondBuilder = Advancement.Builder.advancement();
+
+            secondBuilder.parent(disappointmentHolder);
+
+            secondBuilder.display(
+
+                    new ItemStack(ModItems.TOMATO_WITH_MALTESE_CROSS.get()),
+
+                    Component.translatable("advancements.baldejdelights.maltese_tomato_advancement.title"),
+                    Component.translatable("advancements.baldejdelights.maltese_tomato_advancement.description"),
+
+                    null,
+
+                    AdvancementType.GOAL,
+
+                    true,
+
+                    true,
+
+                    false
+            );
+
+            secondBuilder.addCriterion("pickup_tomato_with_maltese_cross", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.TOMATO_WITH_MALTESE_CROSS));
+
+            secondBuilder.requirements(AdvancementRequirements.allOf(List.of("pickup_tomato_with_maltese_cross")));
+
+            secondBuilder.save(saver, ResourceLocation.fromNamespaceAndPath("baldejdelights", "maltese_tomato_advancement"), existingFileHelper);
+
 
         }
     }

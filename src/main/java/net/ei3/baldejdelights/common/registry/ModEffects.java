@@ -2,6 +2,7 @@ package net.ei3.baldejdelights.common.registry;
 
 import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.data.effects.disappointment;
+import net.ei3.baldejdelights.data.effects.tomato_blessing;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffect;
@@ -14,6 +15,8 @@ public class ModEffects {
             DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, BaldejDelights.MODID);
 
     public static final Holder<MobEffect> DISAPPOINTMENT = MOB_EFFECTS.register("disappointment", () -> new disappointment());
+
+    public static final Holder<MobEffect> TOMATO_BLESSING = MOB_EFFECTS.register("tomato_blessing", () -> new tomato_blessing());
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
