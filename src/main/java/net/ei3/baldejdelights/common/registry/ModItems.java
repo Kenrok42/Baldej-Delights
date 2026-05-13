@@ -26,6 +26,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> FOUR_MEAT_PIE = ITEMS.register("four_meat_pie", () -> new Item(new Item.Properties().food(ModFoodProperties.FOUR_MEAT_PIE)));
 
+    public static final DeferredItem<Item> FOUR_MEAT_PIE_SLICE = ITEMS.register("four_meat_pie_slice", () -> new Item(new Item.Properties().food(ModFoodProperties.FOUR_MEAT_PIE_SLICE)));
+
 
 
     public static final DeferredItem<Item> TOMATO_WITH_MALTESE_CROSS = ITEMS.register("tomato_with_maltese_cross", () -> new Item(new Item.Properties().food(ModFoodProperties.TOMATO_WITH_MALTESE_CROSS)));

@@ -4,6 +4,7 @@ import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.common.registry.ModAdvancements;
 import net.ei3.baldejdelights.data.recipe.BasicRecipes;
 import net.ei3.baldejdelights.data.recipe.CookingRecipes;
+import net.ei3.baldejdelights.data.recipe.CuttingRecipes;
 import net.ei3.baldejdelights.data.recipe.SmeltingRecipes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -37,6 +38,7 @@ public class DataGenerators {
                 CookingRecipes.register(consumer);
                 BasicRecipes.register(consumer);
                 SmeltingRecipes.register(consumer);
+                CuttingRecipes.register(consumer);
             }
         });
     }

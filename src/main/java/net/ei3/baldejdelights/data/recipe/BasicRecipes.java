@@ -2,12 +2,12 @@ package net.ei3.baldejdelights.data.recipe;
 
 import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.common.registry.ModItems;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.common.NeoForgeConfig;
+import net.neoforged.neoforge.common.Tags;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 
 import static net.minecraft.advancements.critereon.InventoryChangeTrigger.TriggerInstance.hasItems;
@@ -15,6 +15,7 @@ import static net.minecraft.advancements.critereon.InventoryChangeTrigger.Trigge
 public class BasicRecipes {
     public static void register(RecipeOutput consumer) {
         shapelessRecipes(consumer);
+        shapedRecipes(consumer);
     }
 
     public static void shapelessRecipes(RecipeOutput consumer) {
@@ -41,4 +42,20 @@ public class BasicRecipes {
 
                 .unlockedBy("has_egg", hasItems(Items.EGG))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(BaldejDelights.MODID, "crafting/raw_pancakes"));
-}}
+    }
+    public static void shapedRecipes(RecipeOutput consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.FOUR_MEAT_PIE)
+                .pattern("#b#")
+                .pattern("cmp")
+                .pattern("#k#")
+                .define('#', Tags.Items.CROPS_WHEAT)
+                .define("b", CommonTags.Items.FOODS_COOKED_BEEF)
+                .define("c", CommonTags.Items.FOODS_COOKED_CHICKEN)
+                .define("m", CommonTags.Items.FOODS_COOKED_MUTTON)
+                .define("p", CommonTags.Items.FOODS_COOKED_PORK)
+                .define("k", vectorwing.farmersdelight.common.registry.ModItems.PIE_CRUST.get())
+
+                .unlockedBy("has_wheat", InventoryChangeTrigger.TriggerInstance.hasItems(Items.WHEAT))
+                .save(consumer);
+    }
+}
