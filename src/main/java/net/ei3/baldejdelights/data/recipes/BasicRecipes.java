@@ -1,4 +1,4 @@
-package net.ei3.baldejdelights.data.recipe;
+package net.ei3.baldejdelights.data.recipes;
 
 import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.common.registry.ModItems;
@@ -6,8 +6,7 @@ import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.neoforged.neoforge.common.NeoForgeConfig;
-import net.neoforged.neoforge.common.Tags;
+import net.minecraft.world.item.crafting.Ingredient;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 
 import static net.minecraft.advancements.critereon.InventoryChangeTrigger.TriggerInstance.hasItems;
@@ -48,12 +47,13 @@ public class BasicRecipes {
                 .pattern("#b#")
                 .pattern("cmp")
                 .pattern("#k#")
-                .define('#', Tags.Items.CROPS_WHEAT)
-                .define("b", CommonTags.Items.FOODS_COOKED_BEEF)
-                .define("c", CommonTags.Items.FOODS_COOKED_CHICKEN)
-                .define("m", CommonTags.Items.FOODS_COOKED_MUTTON)
-                .define("p", CommonTags.Items.FOODS_COOKED_PORK)
-                .define("k", vectorwing.farmersdelight.common.registry.ModItems.PIE_CRUST.get())
+
+                .define('#', Items.WHEAT)
+                .define('b', CommonTags.Items.FOODS_COOKED_BEEF)
+                .define('c', Ingredient.of(CommonTags.Items.FOODS_COOKED_CHICKEN))
+                .define('m', Ingredient.of(CommonTags.Items.FOODS_COOKED_MUTTON))
+                .define('p', Ingredient.of(CommonTags.Items.FOODS_COOKED_PORK))
+                .define('k', vectorwing.farmersdelight.common.registry.ModItems.PIE_CRUST.get())
 
                 .unlockedBy("has_wheat", InventoryChangeTrigger.TriggerInstance.hasItems(Items.WHEAT))
                 .save(consumer);

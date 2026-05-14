@@ -6,15 +6,16 @@
   "item.baldejdelights.bobs": "Бобс",
   "item.baldejdelights.fried_nails": "Жареные гвозди",
   "item.baldejdelights.overcooked_pancakes": "Пережареные сырники",
-  "item.baldejdelights.four_meat_pie": "Пирог четрые мяса",
-  "item.baldejdeligths.four_meat_pie_slice": "Кусок пирога четыре мяса",
+  "item.baldejdelights.four_meat_pie": "Пирог четыре мяса",
+  "item.baldejdelights.four_meat_pie_slice": "Долька пирога четыре мяса",
+  "block.baldejdelights.four_meat_pie_block": "Пирог четыре мяса",
 
   "item.baldejdelights.raw_pancakes": "Сырые сырники",
   "item.baldejdelights.tomato_with_maltese_cross": "Помидор с мальтийским крестом",
 
   "effect.baldejdelights.disappointment": "Разочарование",
 
-  "effect.baldejdelights.tomato_blessing": "Помидорное благословение",
+  "effect.baldejdelights.tomato_blessing": "Томатное Благо",
 
   "advancements.baldejdelights.disappointment_advancement.title": "Разочарование",
   "advancements.baldejdelights.disappointment_advancement.description": "Каждый блин комом",

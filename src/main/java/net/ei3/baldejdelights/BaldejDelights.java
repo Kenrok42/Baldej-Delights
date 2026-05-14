@@ -1,5 +1,6 @@
 package net.ei3.baldejdelights;
 
+import net.ei3.baldejdelights.common.registry.ModBlocks;
 import net.ei3.baldejdelights.common.registry.ModCreativeTabs;
 import net.ei3.baldejdelights.common.registry.ModEffects;
 import net.ei3.baldejdelights.common.registry.ModItems;
@@ -43,6 +44,7 @@ public class BaldejDelights {
 
         ModEffects.register(modEventBus);
 
+        ModBlocks.register(modEventBus);
     }
 
 

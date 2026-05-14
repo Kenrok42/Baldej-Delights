@@ -1,4 +1,4 @@
-package net.ei3.baldejdelights.data.recipe;
+package net.ei3.baldejdelights.data.recipes;
 
 import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.common.registry.ModItems;
@@ -10,11 +10,9 @@ import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
-import static vectorwing.farmersdelight.data.recipe.CookingRecipes.SMALL_EXP;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.MEDIUM_EXP;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.LARGE_EXP;
 
-import static vectorwing.farmersdelight.data.recipe.CookingRecipes.FAST_COOKING;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.NORMAL_COOKING;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.SLOW_COOKING;
 public class CookingRecipes {

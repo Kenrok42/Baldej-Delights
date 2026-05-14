@@ -1,12 +1,10 @@
-package net.ei3.baldejdelights.data.recipe;
+package net.ei3.baldejdelights.data.recipes;
 
 import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.common.registry.ModItems;
 import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 

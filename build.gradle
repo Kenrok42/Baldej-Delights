@@ -31,6 +31,7 @@ repositories {
     }
     maven { url  "https://maven.blamejared.com/" }
     maven { url = "https://maven.ryanliptak.com/" }
+    maven { url = "https://maven.createmod.net" }
 }
 
 base {
@@ -108,10 +109,6 @@ dependencies {
     localRuntime "squeek.appleskin:appleskin-neoforge:${appleskin_version}"
 
     compileOnly "mezz.jei:jei-1.21.1-neoforge:19.9.1.125"
-
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

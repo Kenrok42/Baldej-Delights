@@ -43,10 +43,6 @@ public class ModFoodProperties {
 
             .build();
 
-    public static final FoodProperties FOUR_MEAT_PIE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.7f)
-
-            .build();
-
     public static final FoodProperties FOUR_MEAT_PIE_SLICE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.7f)
 
             .build();

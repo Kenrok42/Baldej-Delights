@@ -1,4 +1,4 @@
-package net.ei3.baldejdelights.data.recipe;
+package net.ei3.baldejdelights.data.recipes;
 
 import net.ei3.baldejdelights.BaldejDelights;
 import net.ei3.baldejdelights.common.registry.ModItems;
