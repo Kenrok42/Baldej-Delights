@@ -26,6 +26,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.OVERCOOKED_PANCAKES);
                         output.accept(ModItems.FOUR_MEAT_PIE);
                         output.accept(ModItems.FOUR_MEAT_PIE_SLICE);
+                        output.accept(ModItems.SLOP);
+                        output.accept(ModItems.SAINT_SLOP);
 
                         output.accept(ModItems.RAW_PANCAKES);
                         output.accept(ModItems.TOMATO_WITH_MALTESE_CROSS);

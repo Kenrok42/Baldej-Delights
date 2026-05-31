@@ -32,6 +32,16 @@ public class ModFoodProperties {
 
             .build();
 
+    public static final FoodProperties SLOP = new FoodProperties.Builder().nutrition(10).saturationModifier(0.7f)
+            .usingConvertsTo(Items.BOWL)
+            .build();
+
+    public static final FoodProperties SAINT_SLOP = new FoodProperties.Builder().nutrition(20).saturationModifier(0.7f)
+            .usingConvertsTo(Items.BOWL)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1f)
+            .effect(() -> new MobEffectInstance(ModEffects.TOMATO_BLESSING, 2400, 0), 1f)
+            .build();
+
     public static final FoodProperties OVERCOOKED_PANCAKES = new FoodProperties.Builder().nutrition(5).saturationModifier(0.5f)
             .effect(() -> new MobEffectInstance(ModEffects.DISAPPOINTMENT, 600, 0), 0.5f)
 
@@ -46,4 +56,6 @@ public class ModFoodProperties {
     public static final FoodProperties FOUR_MEAT_PIE_SLICE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.7f)
 
             .build();
+
+
 }

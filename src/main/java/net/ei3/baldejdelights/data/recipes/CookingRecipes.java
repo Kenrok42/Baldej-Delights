@@ -42,6 +42,7 @@ public class CookingRecipes {
 
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(BaldejDelights.MODID, "cooking/apples_in_chicken_broth"));
 
+        // Fried Nails / Жареные гвозди
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.FRIED_NAILS.get(), 1, SLOW_COOKING, LARGE_EXP, Items.BOWL)
                 .addIngredient(Items.IRON_NUGGET)
                 .addIngredient(Items.IRON_INGOT)
@@ -51,6 +52,30 @@ public class CookingRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
 
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(BaldejDelights.MODID, "cooking/fried_nails"));
+
+        // Slop / Нажор
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SLOP.get(), 1, SLOW_COOKING, LARGE_EXP, Items.BOWL)
+                .addIngredient(Items.ROTTEN_FLESH)
+                .addIngredient(Items.BONE)
+                .addIngredient(Items.SPIDER_EYE)
+
+                .unlockedByItems("has_rotten_flesh", Items.ROTTEN_FLESH)
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
+
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(BaldejDelights.MODID, "cooking/slop"));
+
+        // Saint Slop / Священный Нажор
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SAINT_SLOP.get(), 1, SLOW_COOKING, LARGE_EXP, Items.BOWL)
+                .addIngredient(Items.ROTTEN_FLESH)
+                .addIngredient(Items.BONE)
+                .addIngredient(Items.SPIDER_EYE)
+                .addIngredient(ModItems.TOMATO_WITH_MALTESE_CROSS)
+
+                .unlockedByItems("has_rotten_flesh", Items.ROTTEN_FLESH)
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
+
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(BaldejDelights.MODID, "cooking/saint_slop"));
     }
+
 
 }
