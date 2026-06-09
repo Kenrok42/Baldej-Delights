@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "minecraft:rotten_flesh"
+    },
+    {
+      "tag": "minecraft:bone"
+    },
+    {
+      "tag": "minecraft:spider_eye"
+    },
+    {
+      "tag": "baldejdelights:tomato_with_maltese_cross"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "results": [
+    {
+      "id": "baldejdelights:slop",
+      "count": 1
+    }
+  ],
+  "processingTime": 200
+}

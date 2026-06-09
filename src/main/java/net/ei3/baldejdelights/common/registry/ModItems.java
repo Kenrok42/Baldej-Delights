@@ -29,6 +29,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> FOUR_MEAT_PIE_SLICE = ITEMS.register("four_meat_pie_slice", () -> new Item(new Item.Properties().food(ModFoodProperties.FOUR_MEAT_PIE_SLICE)));
 
+    public static final DeferredItem<Item> SLOP = ITEMS.register("slop", () -> new Item(new Item.Properties().food(ModFoodProperties.SLOP).stacksTo(16)));
+
+    public static final DeferredItem<Item> SAINT_SLOP = ITEMS.register("saint_slop", () -> new Item(new Item.Properties().food(ModFoodProperties.SAINT_SLOP).stacksTo(16)));
     // ingredients
 
     public static final DeferredItem<Item> TOMATO_WITH_MALTESE_CROSS = ITEMS.register("tomato_with_maltese_cross", () -> new Item(new Item.Properties().food(ModFoodProperties.TOMATO_WITH_MALTESE_CROSS)));
