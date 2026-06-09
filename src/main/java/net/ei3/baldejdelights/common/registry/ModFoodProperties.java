@@ -7,12 +7,12 @@ import net.minecraft.world.item.Items;
 
 public class ModFoodProperties {
 
-    public static final FoodProperties ONION_FRENZY = new FoodProperties.Builder().nutrition(7).saturationModifier(1f)
+    public static final FoodProperties ONION_FRENZY = new FoodProperties.Builder().nutrition(9).saturationModifier(1f)
             .usingConvertsTo(Items.BOWL)
 
             .build();
 
-    public static final FoodProperties APPLES_IN_CHICKEN_BROTH = new FoodProperties.Builder().nutrition(8).saturationModifier(1f)
+    public static final FoodProperties APPLES_IN_CHICKEN_BROTH = new FoodProperties.Builder().nutrition(10).saturationModifier(1f)
             .usingConvertsTo(Items.BOWL)
 
             .build();
