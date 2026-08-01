@@ -1,5 +1,4 @@
 
-# Baldej Delights
 
 <img src="https://furiebstvo.ru/image/BaldejDelights.png">
 
